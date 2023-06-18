@@ -1,0 +1,44 @@
+:root{
+    --altura: 30px;
+    --bordas-arredondadas: 22px;
+    --branco: whitesmoke;
+    --centro: center;
+    --cinza: rgb(57, 57, 57);
+
+}
+
+body{
+    background: black;
+
+}
+
+section{
+    background: linear-gradient(0deg, rgb(19, 19, 134), rgb(56, 56, 215));
+    border: 1px solid var(--cinza);
+    border-radius: var(--bordas-arredondadas);
+    box-shadow: 1px 1px 12px var(--branco);
+    color: var(--branco);
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    justify-content: var(--centro);
+    margin: auto;
+    text-align: var(--centro);
+
+}
+
+#campo--bin, #botao--converter{
+    background: var(--cinza);
+    border-radius: calc(var(--bordas-arredondadas) - 12px);
+    border-style: none;
+    color: var(--branco);
+    font-size: 22px;
+    height: var(--altura);
+    transition: 0.85s ease-in;
+
+}
+
+#campo--bin:hover, #botao--converter:hover{
+    box-shadow: 1px 1px 12px var(--branco);
+
+}
